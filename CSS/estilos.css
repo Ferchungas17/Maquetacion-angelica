@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     box-sizing: border-box;
     /*controlar dimensiones sin que se vean afectadas
@@ -12,7 +14,16 @@
 .titulo{
     width: 100%;
     height: 50px;
-}/*contenedor para pantallas grandes*/
+    padding: 10px;
+    background-color: rgba(0,0,0);
+    font-family: 'Work Sans';
+    color:#fff;
+    text-align: center;
+    /*aumentar el titulo puede ser h1 pero...*/
+    font-size: 25px;/*puede ser 2em*/
+}
+
+/*contenedor para pantallas grandes*/
 .contenedor{
     width: 99%;
     max-width: 1280px;
@@ -23,11 +34,13 @@ body{
     background-image: url('../img/Fondo2.jpg');
     background-size: 100% 100%;
     background-attachment: fixed;/*la imagen se quede fija*/
+    font-family: 'Mulish';
 }
 /*navegador*/
 nav{
     width: 100%;
     height: 50px;
+    background-color: #0f068b;
 }
 /*La suma da 100=65+15+20*/
 .logo{
@@ -56,7 +69,8 @@ nav{
     float: left;
 }
 .ingreso{
-    width: 15%;height: 100%;
+    width: 15%;
+    height: 100%;
     float: left;
 }
 /*encabezado*/
@@ -66,22 +80,39 @@ header{
     /*depende del monitor*/
     background-image: url('../img/Header3.png');
     background-size:100% 100%;
+
 }
 /*portafolio*/
 /*#titulo1{
 width: 100%;
 height: 50px;
 }*/
-main#portafolio{
-    /*tiene que estar pegado para que sepa que es de esa etiqueta
+main#portafolio{/*tiene que estar pegado para que sepa que es de esa etiqueta
     si se separa pensara que es de alguna del interior*/
     width: 100%;
     height: 550px;
+    background: rgb(255,255,255,0.9);/*transparencia 0.4*/
 }
 .div-porta{
     width: 33.33%;
     height:100%;
     float: left;
+    text-align: center;
+    padding: 50px;
+    font-size: 13px;
+}
+.div-porta img{
+    width: 150px;
+    height: 150px;
+    margin: 40px 0px 0px 0px;
+    border-radius: 50%;
+}
+/*en div porta hay una etiqueta p que quiero este justificada*/
+.div-porta p{
+    margin: 40px 0px 0px 0px;/*cuando hay 2 medidas afecta primero
+    arriba y abajo y la otra es izq y der*/
+    /*margin-top: 20px;*/
+    text-align: justify;
 }
 /*quinenes-somos*/
 /*#titulo2{
@@ -105,4 +136,31 @@ section#quienes-somos{
     width: 20%;
     height: 100%;
     float: left;
+}
+/*contactenos*/
+/*#titulo3{
+width: 100%;
+height: 50px;
+}*/
+section#contactenos{
+    width: 100%;
+    height: 550px;
+}
+.div-contacto{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.div-arr{
+    width: 100%;
+    height:70%;
+}
+.div-aba{
+    width: 100%;
+    height:30%;
+}
+/*footer*/
+footer{
+    width: 100%;
+    height: 50px;
 }
