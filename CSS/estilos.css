@@ -9,7 +9,7 @@
 }
 /*clases especiales*/
 .borde{
-    border:1px solid gray;
+    border:1px solid rgb(37, 2, 94);
 }
 .titulo{
     width: 100%;
@@ -17,7 +17,7 @@
     padding: 10px;
     background-color: rgba(0,0,0);
     font-family: 'Work Sans';
-    color:#fff;
+    color:#ffffff;
     text-align: center;
     /*aumentar el titulo puede ser h1 pero...*/
     font-size: 25px;/*puede ser 2em*/
@@ -73,6 +73,63 @@ nav{
     height: 100%;
     float: left;
 }
+/*Niveles de navegacion*/
+/*Nivel 0*/
+nav ul{
+    list-style: none; /*para quitar viñetas*/
+    text-align: right;
+}
+nav ul li{
+    /*display:inline-block;/*Dejar los elementos de forma horizontal*/
+    width: 130px;/*Tamaño definido para todas las opciones(los elementos li)*/
+    /*Se agrega el mismo color a todos los elementos de forma horizontal*/
+    background-color: #0f068b;
+
+}
+nav .navegacion>ul>li{
+/*quiere decir que solo las etiquetas que estan directamente relacionadas
+con la clase navegación y solo las li van a tener dichas propuedades*/
+/*Se agrega el display*/
+display:inline-block;
+}
+nav .ingreso ul li{
+    width: 100%;
+}
+nav ul li a{
+    display: block;/*para poder colocarle un margin o un padding al
+     elemnto <a>*/ 
+    text-decoration: none; /*QUitar el subrayado del link del anchor <a>*/
+    color: #ffffff;
+    padding: 15px 2px;/*Recuerde que es arriba (15px)-derecha(2p)-abajo(15)-izquierda(2)*/
+    text-align: center;
+    border-bottom: 2px solid #ffffff;/*borde inferior al elemento <a>*/
+}
+
+/*Recuerde hover es una pseudo-clase el proposito es que algo cambie o resalte
+cuando pase el cursor por descendencia el elemento <a> tendra este efecto*/
+nav ul li a:hover{
+    background: rgba(0,0,0,0.5);/*una opacidad mientras el puntero
+    pasa sobre la opcion*/
+    border-bottom: 2px solid rgb(0,0,0);
+}
+/*Nivel 1 -primer despliegue*/
+nav li ul{
+    position: absolute;
+    display:none;
+}
+nav .ingreso li ul{
+    width: 10%;/*Se coloca un ancho al elemento de la clase ingreso
+    que sea acorde a lo que se necesita*/
+}
+/*Nivel 2 -despliegues laterales*/
+nav li ul li{
+
+}
+/*encabezado*/
+nav li ul li ul{
+
+}
+
 /*encabezado*/
 header{
     width: 100%;
