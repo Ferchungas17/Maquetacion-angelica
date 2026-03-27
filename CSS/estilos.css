@@ -14,7 +14,7 @@
 .titulo{
     width: 100%;
     height: 50px;
-    padding: 10px;
+    padding: 52px;
     background-color: rgba(0,0,0);
     font-family: 'Work Sans';
     color:#ffffff;
@@ -41,6 +41,7 @@ nav{
     width: 100%;
     height: 50px;
     background-color: #0f068b;
+    position: fixed;
 }
 /*La suma da 100=65+15+20*/
 .logo{
@@ -86,6 +87,9 @@ nav ul li{
     background-color: #0f068b;
 
 }
+nav ul li:hover>ul{
+    display: block;
+}
 nav .navegacion>ul>li{
 /*quiere decir que solo las etiquetas que estan directamente relacionadas
 con la clase navegación y solo las li van a tener dichas propuedades*/
@@ -114,8 +118,8 @@ nav ul li a:hover{
 }
 /*Nivel 1 -primer despliegue*/
 nav li ul{
-    position: absolute;
-    display:none;
+    position: absolute;/*Los elementos ul mantengan la posicion*/
+    display:none;/*display:none;/*Se ocultan los elementos del nivel1*/
 }
 nav .ingreso li ul{
     width: 10%;/*Se coloca un ancho al elemento de la clase ingreso
@@ -123,11 +127,13 @@ nav .ingreso li ul{
 }
 /*Nivel 2 -despliegues laterales*/
 nav li ul li{
-
+    position: relative;
 }
+/*nivel 2-despliegues laterales+*/
 /*encabezado*/
 nav li ul li ul{
-
+    left: 130px; /*desde la izquierda va a ocupar 130px*/
+    top: 2px;/*quede un poco abajo*/
 }
 
 /*encabezado*/
@@ -208,10 +214,13 @@ section#contactenos{
     height: 100%;
     float: left;
 }
-.div-arr{
+/*para el video*/
+.div-arr iframe{
     width: 100%;
-    height:70%;
+    height: 100%;
+    border: 0;
 }
+
 .div-aba{
     width: 100%;
     height:30%;
