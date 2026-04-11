@@ -37,7 +37,7 @@ nav {
   width: 65%;
   height: 100%;
   /*background: #333;*/
-  background: #db9f16;
+  background: #120494;
   float: left;
 }
 
@@ -47,7 +47,7 @@ nav {
   height: 100%;
   float: left;
   font-size: 0.7em;
-  background: #333;
+  background: #0f0f0f;
 }
 .navega .notificacion {
   width: 80%;
@@ -61,7 +61,7 @@ de administrador*/
 .ingreso {
   width: 15%;
   height: 100%;
-  background: #333;
+  background: #3c24c4;
   /*background:#DB9F16;*/
   float: left;
 }
@@ -78,7 +78,7 @@ nav ul li:hover > ul {
 }
 /*opciones*/
 nav .navega ul li {
-  background: #333;
+  background: #3c24c4;
   /*background:#DB9F16;*/
 }
 nav .ingreso ul li {
@@ -101,7 +101,7 @@ nav .ingreso ul li a {
   border-bottom: 3px solid #aaa;
 }
 nav ul li a:hover {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(5, 5, 5, 0.5);
   border-bottom: 3px solid #aaa;
 }
 /* Nivel 1 */
@@ -127,7 +127,7 @@ aside {
   width: 20%;
   height: 750px;
   /*background: #DB9F16;*/
-  background: #333;
+  background: #3c24c4;
   color: #fff;
   float: left;
 }
